@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Hyunjong KIM" />
+    <title>boop Website</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="announcement">
+        <p class="announcement__text">
+          Vet Approved. Grain-Free. Ethically Sourced.
+        </p>
+      </div>
+
+      <nav class="nav">
+        <a class="nav__logo" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="110" height="48">
+            <path
+              d="M104.34003 27.1507123c-.407494.9916119-.968797 1.8578268-1.685906 2.598131-.71686.7390193-1.555318 1.3192369-2.516624 1.7401387-.9613063.420131-1.9790423.6305819-3.0537075.6305819-1.0751646 0-2.0936496-.2104509-3.0542065-.6305819-.961306-.4209018-1.8000143-1.0011194-2.5166243-1.7401387-.7168596-.7403042-1.2866519-1.6065191-1.7103756-2.598131-.423474-.9921257-.6349613-2.0428385-.6349613-3.1529093 0-1.1095569.2114873-2.1610406.6349613-3.1526524.4237237-.9921258.993516-1.8583407 1.7103756-2.597874.71661-.7400472 1.5553183-1.3202647 2.5166243-1.7401387.9605569-.4209018 1.9790419-.6305819 3.0542065-.6305819 1.0746652 0 2.0924012.2096801 3.0537075.6305819.961306.419874 1.799764 1.0000915 2.516624 1.7401387.717109.7395333 1.278412 1.6057482 1.685906 2.597874.407494.9916118.610991 2.0430955.610991 3.1526524 0 1.1100708-.203497 2.1607836-.610991 3.1529093m4.654968-8.3484003c-.670167-1.6142279-1.593021-3.0267416-2.76931-4.237284-1.176289-1.2105425-2.549084-2.1615545-4.117386-2.8499526-1.568802-.6896829-3.2519611-1.0345243-5.0489791-1.0345243-1.7972677 0-3.4799278.3448414-5.0487292 1.0345243-1.5685518.6883981-2.9408474 1.6394101-4.1171364 2.8499526-1.1765387 1.2105424-2.1001415 2.6230561-2.76956 4.237284-.6701677 1.6142279-1.0047521 3.3458869-1.0047521 5.195491V48c2.7368507 0 4.9553452-5.372794 4.9553452-12.0005846 0-.5167482-.0134832-1.0257876-.0397007-1.5250625.8981345.7271991 1.8899027 1.3292584 2.975804 1.8066916 1.5688014.688912 3.2514615 1.0342673 5.0487292 1.0342673 1.797018 0 3.4801771-.3453553 5.0489791-1.0342673 1.568302-.6894259 2.941097-1.6394101 4.117386-2.8499526 1.176289-1.2107994 2.099143-2.6233131 2.76931-4.237284C109.664417 27.57958 110 25.8471501 110 23.997803c0-1.8496041-.335583-3.5812631-1.005002-5.195491m-68.0134739-8.1176238c1.7967683 0 3.4799278.3453553 5.0489789 1.0342673 1.5683021.6896829 2.9408474 1.6394101 4.1171364 2.8499526 1.1765386 1.2105424 2.0991427 2.6233131 2.76956 4.237284.6691689 1.6142279 1.0047521 3.3466578 1.0047521 5.195748 0 1.849861-.3355832 3.58152-1.0047521 5.1957479-.6704173 1.6142279-1.5930214 3.0267416-2.76956 4.237284-1.176289 1.2105425-2.5488343 2.1615545-4.1171364 2.8502096-1.5690511.6894259-3.2522106 1.0342673-5.0489789 1.0342673-1.7975174 0-3.4801775-.3448414-5.0487293-1.0342673-1.5685518-.6886551-2.941097-1.6396671-4.117386-2.8502096-1.176289-1.2105424-2.1001415-2.6230561-2.7693104-4.237284-.6704173-1.6142279-1.0050017-3.3458869-1.0050017-5.1957479 0-1.8490902.3345844-3.5815201 1.0050017-5.195748.6691689-1.6139709 1.5930214-3.0267416 2.7693104-4.237284 1.176289-1.2105425 2.5488342-2.1602697 4.117386-2.8499526 1.5685518-.688912 3.2512119-1.0342673 5.0487293-1.0342673zm28.0410967 0c1.7967683 0 3.4801774.3453553 5.0489789 1.0342673 1.5683021.6896829 2.9408473 1.6394101 4.1171363 2.8499526 1.1765387 1.2105424 2.0993925 2.6233131 2.7695601 4.237284.6691689 1.6142279 1.0050018 3.3466578 1.0050018 5.195748 0 1.849861-.3358329 3.58152-1.0050018 5.1957479-.6701676 1.6142279-1.5930214 3.0267416-2.7695601 4.237284-1.176289 1.2105425-2.5488342 2.1615545-4.1171363 2.8502096-1.5688015.6894259-3.2522106 1.0342673-5.0489789 1.0342673-1.7975174 0-3.4801775-.3448414-5.0487293-1.0342673-1.5685518-.6886551-2.9408473-1.6396671-4.117386-2.8502096-1.176289-1.2105424-2.1001415-2.6230561-2.7693104-4.237284-.6704173-1.6142279-1.0050017-3.3458869-1.0050017-5.1957479 0-1.8490902.3345844-3.5815201 1.0050017-5.195748.6691689-1.6139709 1.5930214-3.0267416 2.7693104-4.237284 1.1765387-1.2105425 2.5488342-2.1602697 4.117386-2.8499526 1.5685518-.688912 3.2512119-1.0342673 5.0487293-1.0342673zM0 0c2.73685071 0 4.95534524 5.37279395 4.95534524 12.0005846 0 .5167482-.01323357 1.0257876-.03970069 1.5250625.89813447-.7269422 1.88990265-1.3292584 2.9760536-1.8066916 1.56855179-.688912 3.25121185-1.0342673 5.04872925-1.0342673 1.7967683 0 3.4799278.3453553 5.0487292 1.0342673 1.5685518.6896829 2.9410971 1.6394101 4.1173861 2.8499526 1.176289 1.2105424 2.0991427 2.6233131 2.76956 4.237284.6691689 1.6142279 1.0047521 3.3466578 1.0047521 5.195748 0 1.849861-.3355832 3.58152-1.0047521 5.1957479-.6704173 1.6142279-1.593271 3.0267416-2.76956 4.237284-1.176289 1.2105425-2.5488343 2.1615545-4.1173861 2.8502096-1.5688014.6894259-3.2519609 1.0342673-5.0487292 1.0342673-1.7975174 0-3.48017746-.3448414-5.04872925-1.0342673-1.56855179-.6886551-2.94109702-1.6396671-4.11738602-2.8502096-1.17628899-1.2105424-2.10014153-2.6230561-2.76956008-4.237284C.33458443 27.5834601 0 25.8518011 0 24.0019401zm41.0059937 15.8806931c-1.0751646 0-2.0938993.2101939-3.0544562.6303249-.961306.4209018-1.7997646 1.0011194-2.5166243 1.7403957-.7168596.7400472-1.2866519 1.6062621-1.7103756 2.597874-.4232243.9921257-.6347117 2.0430955-.6347117 3.1526524 0 1.1098138.2114874 2.1612975.6347117 3.1529093.4237237.9921258.993516 1.8583407 1.7103756 2.597874.7168597.7400472 1.5553183 1.3202647 2.5166243 1.7401387.9605569.4209018 1.9792916.6305819 3.0544562.6305819 1.0744155 0 2.0924011-.2096801 3.0534575-.6305819.961306-.419874 1.8000143-1.0000915 2.5168739-1.7401387.7168596-.7395333 1.2781625-1.6057482 1.685906-2.597874.4072442-.9916118.6107414-2.0430955.6107414-3.1529093 0-1.1095569-.2034972-2.1605267-.6107414-3.1526524-.4077435-.9916119-.9690464-1.8578268-1.685906-2.597874-.7168596-.7392763-1.5555679-1.3194939-2.5168739-1.7403957-.9610564-.420131-1.979042-.6303249-3.0534575-.6303249zm28.0410967 0c-1.0751646 0-2.0938993.2101939-3.0544563.6303249-.961306.4209018-1.7997646 1.0011194-2.5166242 1.7403957-.7166099.7400472-1.2866519 1.6062621-1.7103756 2.597874-.4232244.9921257-.6347117 2.0430955-.6347117 3.1526524 0 1.1098138.2114873 2.1612975.6347117 3.1529093.4237237.9921258.9937657 1.8583407 1.7103756 2.597874.7168596.7400472 1.5553182 1.3202647 2.5166242 1.7401387.960557.4209018 1.9792917.6305819 3.0544563.6305819 1.0744155 0 2.0924011-.2096801 3.0537071-.6305819.961306-.419874 1.7997646-1.0000915 2.5166243-1.7401387.7168596-.7395333 1.2781624-1.6057482 1.685906-2.597874.4072442-.9916118.6109911-2.0430955.6109911-3.1529093 0-1.1095569-.2037469-2.1605267-.6109911-3.1526524-.4077436-.9916119-.9690464-1.8578268-1.685906-2.597874-.7168597-.7392763-1.5553183-1.3194939-2.5166243-1.7403957-.961306-.420131-1.9792916-.6303249-3.0537071-.6303249zm-56.0821934 0c-1.0751646 0-2.0938993.2101939-3.05445622.6303249-.96130601.4209018-1.79976461 1.0011194-2.51662424 1.7403957-.71685962.7400472-1.28665192 1.6062621-1.71037563 2.597874-.42347403.9921257-.63471166 2.0430955-.63471166 3.1526524 0 1.1098138.21123763 2.1612975.63471166 3.1529093.42372371.9921258.99351601 1.8583407 1.71037563 2.597874.71685963.7400472 1.55531823 1.3202647 2.51662424 1.7401387.96055692.4209018 1.97929162.6305819 3.05445622.6305819 1.0744155 0 2.0921515-.2096801 3.0534575-.6305819.961306-.419874 1.8000143-1.0000915 2.5166242-1.7401387.7171093-.7395333 1.2784122-1.6057482 1.685906-2.597874.4074939-.9916118.6109912-2.0430955.6109912-3.1529093 0-1.1095569-.2034973-2.1605267-.6109912-3.1526524-.4074938-.9916119-.9687967-1.8578268-1.685906-2.597874-.7166099-.7392763-1.5553182-1.3194939-2.5166242-1.7403957-.961306-.420131-1.979042-.6303249-3.0534575-.6303249z"
+              fill="#361F5B"
+              fill-rule="evenodd"
+              opacity=".90000004"
+            ></path>
+          </svg>
+        </a>
+
+        <ul class="nav__list">
+          <li class="nav__list__item">
+            <a href="#">OUR TREATS</a>
+          </li>
+          <li class="nav__list__item">
+            <a href="#">OUR FOOD</a>
+          </li>
+          <li class="nav__list__item">
+            <a href="#">OUR STORY</a>
+          </li>
+          <li class="nav__list__item">
+            <a href="#">FAQ</a>
+          </li>
+          <li class="nav__list__item">
+            <a href="#">CONTACT</a>
+          </li>
+        </ul>
+
+        <ul class="nav__option">
+          <li class="nav__option__item">
+            <button class="nav__option__item__search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21">
+                <path
+                  d="M20.34286 19.0857143C20.28381 18.81 19.36619 17.8942857 19.08571 17.6c-1.02857-1.0795238.35048.2914286-.45714-.4571429.06-.2919047.15095-.4-.11428-.5714285-.36239.1352381.41571.5709524-.34334 0 .18238.1485714.46.1504762.22857-.1142857C18.26 16.2104762 17.50571 15.56 17.03095 15.27c.10286.0395238.1781-.0080952.22572-.1842857-.59.0847619-.60572-.5576191-1.14238-.8.75952-1.0180953 2.16047-3.3304762 1.37142-5.3714286.22477-.0342857.22667.1542857.34286.2285714C17.97857 4.2057143 13.97524.3561905 9.48571 0h-.91428C4.1481.4514286.82571 3.0371429 0 7.8857143V9.6c.21762.367619.16524.7519048.11429 1.1428571.78381 1.6757143 1.38095 3.3576191 2.85714 4.6857143 2.69428 2.4242857 8.27381 3.0042857 11.2.3428572 2.30286 2.0233333.88238.8328571 3.19952 2.9714285.37667.3471429 1.20143 1.6814286 1.94286 1.7142858.64095.0285714 1.23333-.4147619 1.02905-1.3714286zM3.88619 13.4861905c-.45-.552381-1.23286-2.3061905-1.02857-2.7428572-.54572-.2366666.04428-.8980952-.57143-1.0285714.03524-.3142857.39667-.2409524.34286.1142857C2.61857 9.3595238 2.9919 8.51 2.40048 8.0004762c.59428-.3285714 1.02-1.9914286 1.14285-2.9714286.11096.0028572.08905.1395238.11429.2285714.90238-.7738095 1.76952-1.5828571 2.74286-2.2857142 1.02142-.0747619 2.17809-.5333334 3.54285-.3428572.92238.1285714 1.57286.7719048 2.4.8 1.76286 1.5542857 2.95334 3.5280953 3.2 6.0571429-.42143 5.4857143-8.10809 8.357619-11.65714 4z"
+                  fill="#361F5B"
+                  fill-rule="nonzero"
+                ></path>
+              </svg>
+            </button>
+          </li>
+          <li class="nav__option__item">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25">
+                <path
+                  d="M12.64889 10.5363326c2.3331-1.1200776 3.2757-5.0675012 1.43051-7.3111883.0247-.1986736.16817.0600436.20394-.1059593-.71611-.488737-.88045-.7200814-1.63488-1.271511-.32314-.207945-.69907-.1258266-.91961-.2119185.00128-.1399545.17924-.0966878.20436-.2119185-.40787.2339934-.57306-.1947001-.81744-.423837h-.81743c.09664.1960246-.58498.0649-.20436.2119185.01745.2300199-.36232.0481232-.5109.1059593.05449-.218541.48322-.0256069.20436-.3178778h-.20436c-.23714.495801-1.25468.1823382-1.32833.847674-.44747.077262.08216-.210594-.20436-.2119185-2.04189.7267039-3.69252 4.0838462-2.35013 6.2515958-.14603-.0256068-.17243-.1748327-.30654-.2119185.28993 1.2887294 1.00476 2.1368449 1.73705 2.9668591C3.23688 12.0034268 1.21969 15.3345207 1 20.179066v1.059151c.16902.148343.16902 1.0172088 0 1.1659933v.847674c.25119.4834391.75357.8353121 1.32833.423837.14135-1.6644432.1273-3.7072493.20436-5.8277588 1.31556-4.2683919 4.98594-7.4065517 9.70706-6.3575551 4.52314 1.0052884 6.65231 5.6259947 6.02859 11.7619184.23629.143045.33847.4260445.81743.3178777.98646-7.1699093-1.75876-11.385763-6.43688-13.0338709zM6.92684 4.7085738c.20308-.1765988.12985.0097129.40872 0-.40447-.1911681.02852-.6331065.30653-.7417148-.05407.0852089-.10643.1717423-.10218.3178778.42064-.8255992 1.29896-.851206 2.14577-1.695348.14859.0467986-.01021.0927143 0 .2119185 1.43988-.1849872 2.7431.5902813 3.57629 1.3774702.81701 1.7721685.75613 4.104155-.61308 5.2979626-2.94532 2.5668629-7.75159-1.267979-5.72205-4.7681663z"
+                  fill="#361F5B"
+                  fill-rule="nonzero"
+                  stroke="#361F5B"
+                  stroke-width=".57142857"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li class="nav__option__item">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="26">
+                <path
+                  d="M18.41924 8.2094694c-.88728-.6359122-2.34213-.0124779-3.40229-.4436597-.02653-1.5722189.40476-3.1472106-.6586-4.2147667.12623-.5300808.47749.422401.6586.5545746-.55203-.9455497-.87081-2.0519259-1.86602-1.9964685.01189-.3928236.36268.2356942.3293-.1109149-.52276-.6109563-1.61356-.1280143-1.75626-.8873193-.46559-.1446515-.86944.3378284-.98789-.1109149h-.21953c-1.59847.4533647-3.40778.9164345-3.62228 2.9947027-.18111-.0018486-.06129-.3077889-.21953-.3327448-.66226 1.0204172-.45141 2.6790573-.43907 3.882022-1.02448.2888409-2.33344-.0226451-3.18321.2218298-.87996.6682624-.48205 1.7145597-.54883 2.5510431-.33799 4.2309418-1.1777 8.387016-1.64649 13.4207045v.6650273c.79123 1.1183921 3.60307.3211912 5.37853.3332069 4.42311.0286531 9.43713.0060079 14.05004-.1109149-.3046-5.0872974-1.20193-11.0096916-1.86647-16.4154072zm-9.9887-4.4365966c.2488.3535413.62383-.0988991.65859-.4436596.62521.0988991.89597-.3808079 1.31719-.4436597 2.69796-.4020665 3.55779 2.51592 3.29298 4.8802562-1.40089.4344168-4.02749.0688597-6.14643.2218299-.22411-2.2187605.26709-3.3713513.87767-4.2147668zM2.17388 23.7375573c.10839-2.0930568.52916-3.2863165.76836-5.324378.48937-.1326357.26755-.1622131 0-.2213677.19529-.4995792.19255-1.2981666.21953-1.6641858.11937.0277287.07455.2209055.21953.2218298.18203-.8803871.13492-.9400039 0-1.5528088.25292.5647418.33204-.7819501 0-.8873193.87035-.6146535.18523-2.3088788.76836-3.3274474.06129-.4399625-.50721-1.2741351-.10976-1.330979.03613.5420967.13217-.1488108.21953-.2218298 4.82741-.2588015 9.20159-.0924291 13.0626-.2218298.53969 4.5091534 1.40912 9.1966949 1.97533 14.5298537-5.39957-.2121248-11.03376.1169228-17.12348.0004621z"
+                  fill="#361F5B"
+                  fill-rule="nonzero"
+                  stroke="#361F5B"
+                  stroke-width=".57142857"
+                ></path>
+              </svg>
+              <span class="nav__option__item__count">0</span>
+            </a>
+          </li>
+          <li class="nav__option__item">
+            <button class="nav__option__item__btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18">
+                <path
+                  d="M9.824864 15.7626529c.654046-.7934632 2.695249-1.0114784 2.982505-.1754415.18012-.1716986.355561-.3471401.526324-.5263243.559074.5946295.020585.4238665.877207 0-.086551.7232866.604455-.1679559.175442.5263243.31673-.3513507 1.363297.2245651 1.052648-.1754414.515097.742936 4.0403-.5193066 4.036093 1.7539465-6.576485.3887783-13.190861.5375526-19.123121.5263244.242811-.710187-.381292-.554395-.350882-1.0521808.274624-.4772007.261056-.215676.350882-.8772072 3.025079-.6348641 5.918693-.2147403 9.122955-.5263243.073452.3419938.500593-.2863205.349947.5263243zm4.385569-8.5825952c-.074855.3672574.120703.4650368.175441.7017658.929606.0580126 1.309027-.9660975 1.403531 0 1.032532-.138014 2.437935-.0392989 3.684739.52726.114621.6395425-.118365.9342841-.349948 1.22809-7.528075-.2975486-13.544079.5628162-18.773169.1745058.14971-.5590734-.152517-.6657418-.350883-.8772072.311584-.5146282.240004-.5941617.350883-1.0526486 2.968001-.5922903 5.092948-.0785978 9.122955-.5263243.026089.1210339.09612.1209659.169222.1059307l.072613-.0160933c.105913-.0198308.188086.0062632.10858.4364869.929605-.6250394 2.344365-1.0035251 2.982504-.1754415.791124-.7658603.582933.3569649 1.403532-.5263243zM19.473676.0009941c.243746.2240972.076726.8598969.526324.8772072v.5263243c-.522582-.5389561-.225033.5188388-.526324.7017657-3.307188.2259686-6.384197.2231615-9.473838.3508829.092633-.140821.182927-.2839812.175441-.5263243-.688198.7986094-2.727529 1.0147533-2.982504.1754414-.434627.5628162-.829487.3663217-1.403532.5263243.086084-.7228187-.604922.1688917-.175441-.5263243-.07158.1581312-1.127504-.2255007-1.22809.3508829-.137546-.0190256-.157403-.1549083-.163537-.3045144l-.00541-.1503607-.006494-.0714492C2.848377 2.2288664 1.86918 1.8101462.526 1.579967V.5273184C7.615706.160061 13.861421-.0149126 19.473676.0009941z"
+                  fill="#361F5B"
+                  fill-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </li>
+        </ul>
+
+        <div class="nav__search">
+          <form class="nav__search__form">
+            <input
+              class="nav__search__form__input"
+              type="text"
+              placeholder="Search"
+              autofocus
+            />
+            <button class="nav__search__form__btn" type="button">
+              <svg viewBox="0 0 37 40" width="21" height="21">
+                <path
+                  d="M35.6 36l-9.8-9.8c4.1-5.4 3.6-13.2-1.3-18.1-5.4-5.4-14.2-5.4-19.7 0-5.4 5.4-5.4 14.2 0 19.7 2.6 2.6 6.1 4.1 9.8 4.1 3 0 5.9-1 8.3-2.8l9.8 9.8c.4.4.9.6 1.4.6s1-.2 1.4-.6c.9-.9.9-2.1.1-2.9zm-20.9-8.2c-2.6 0-5.1-1-7-2.9-3.9-3.9-3.9-10.1 0-14C9.6 9 12.2 8 14.7 8s5.1 1 7 2.9c3.9 3.9 3.9 10.1 0 14-1.9 1.9-4.4 2.9-7 2.9z"
+                  fill="#361F5B"
+                ></path>
+              </svg>
+            </button>
+          </form>
+
+          <button class="nav__search__btn-close">
+            <svg viewBox="0 0 40 40" width="16" height="16">
+              <path
+                d="M23.868 20.015L39.117 4.78c1.11-1.108 1.11-2.77 0-3.877-1.109-1.108-2.773-1.108-3.882 0L19.986 16.137 4.737.904C3.628-.204 1.965-.204.856.904c-1.11 1.108-1.11 2.77 0 3.877l15.249 15.234L.855 35.248c-1.108 1.108-1.108 2.77 0 3.877.555.554 1.248.831 1.942.831s1.386-.277 1.94-.83l15.25-15.234 15.248 15.233c.555.554 1.248.831 1.941.831s1.387-.277 1.941-.83c1.11-1.109 1.11-2.77 0-3.878L23.868 20.015z"
+                fill="#361F5B"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="section">
+      <article class="video">
+        <div class="video__text">
+          <h1 class="video__text__heading">Grain Free - Made in the UK</h1>
+          <h2 class="video__text__title">From Farm to Bowl</h2>
+          <p class="video__text__text">
+            Fresh & traceable ingredients slowly baked into our super delicious
+            kibble. Available in a range of delicious flavours, delivered to
+            your door.
+          </p>
+          <div class="video__text__btn">
+            <a href="#">FIND THE RIGHT FOOD</a>
+            <a href="#">SHOP NOW</a>
+          </div>
+        </div>
+
+        <div class="video__bg"></div>
+
+        <button class="video__btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120">
+            <g fill="none" fill-rule="evenodd">
+              <path
+                d="M52.7586207.75431082c-3.2327586.2650862-7.4288793.76293104-10.3448276 1.55172414-4.1788793 1.12715517-7.3168103 4.57974138-11.3793103 4.13793103-1.4655173 3.15301725-5.5646552 2.41379311-7.7586207 7.24137931-1.7693966-1.9741379 2.0581896-2.7478448 2.5862069-4.13793103-4.2456897 3.91810343-8.5193966 4.84482763-9.3103449 9.82758623-1.8318965-.0560345 1.099138-1.7090517-.5172413-1.5517242-.8448276 2.2586207-3.7543104 2.4525862-3.1034483 6.2068966-4.06896553-.9073276-3.98706898 6.1918103-7.24137933 7.7586207C4.4137931 39.0172419.5625 43.2370694 2.06896552 50.4094832c-.74568966-.1163793-.17887931-1.5431034-1.03448276-1.5517241-1.2262931 1.7090517.42672414 3.950431-.51724138 5.1724138H0v8.2758621c4.61853448 32.1120689 22.9439655 51.165948 55.862069 56.37931h8.7931034c17.887931-1.221982 34.2198276-12.890086 44.4849136-26.37931 25.573276-40.8017242-3.3125-95.90517245-56.3814653-91.55172418z"
+                fill="#361F5B"
+              ></path>
+              <path
+                d="M68.8835757 52.9768848c1.8344625-.1058905-.7085572-.1977474 0-1.2247581-1.6600483.5383833-1.8111033-.9351538-3.3637001-.3061895.6680682-1.6368381-4.2809314-3.189474-6.353656-3.3680846.4204626-.0650653.5824185-.3406358.747489-.612379-2.8295571-.8943286-4.9365415-3.499491-8.5961227-2.7557056-.3753018.4069769-.3535 1.1392801-1.1212334 1.224758.5357004 9.6806918-.266293 16.7804611 1.1212334 27.5570561 3.6502376.6621348 7.3067043-2.6510909 10.464845-4.2866532 2.5601496-1.3255454 5.5719071-3.1269604 8.2223782-4.5928427 4.4911627-2.4839624 10.3823098-3.9549478 5.9799115-7.3485482-1.5167796-1.1686233-5.3367595-2.7863246-7.1011449-4.2866532z"
+                fill="#FFF"
+                fill-rule="nonzero"
+              ></path>
+            </g>
+          </svg>
+        </button>
+
+        <div class="video__modal">
+          <iframe
+            src="https://player.vimeo.com/video/473329918?autoplay=1"
+            frameborder="0"
+          ></iframe>
+
+          <button class="video__modal__btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#4A3270" cx="15" cy="15" r="15"></circle>
+                <path
+                  d="M10.88789059 11.29499006c.65348871.71903143 1.4346826 1.63074578 2.12829291 2.12829292-.04015073.08019927-.1112663.48257343.07035826.34156948.15229227-.24039905.62697517.7524104.89165811.75605257-.25187985.27133194-.08102411.5455869-.40397548.81647527-.08983374-.09152882.0557215-.18158834-.00170363-.27291486-.73997 1.27490391-2.81633567 2.22819451-3.31893128 3.86816813-.1634472-.1803979-.0854413-.3442221-.34242125-.2068156-.17355805.38581525-.04549363.77266046.07546887 1.16031407.3191318.11911347.63766742.1427068.95605387.14241997 1.6336854-1.82877885 2.33754996-2.28434258 4.06646592-4.34108441 1.46574114 1.1414177 2.98102619 3.43417514 4.73461281 4.3277959.4846702-.13968078.60595932-.6105363.53986723-.9517949-1.72128579-1.63935743-2.76154862-2.9304907-4.46056365-4.1899174.80666558-1.29239688 3.10499384-3.02890165 4.26902263-4.68095022l-.41192767-.41192768c-1.69460346 1.04124048-3.04939439 3.00991803-4.68009852 4.40548003-1.76865975-1.71441744-2.89596813-3.15135883-4.59900716-4.46340148-.72270407.48870632.15135175 1.20286055.48682803 1.57223821z"
+                  fill="#FFF"
+                  fill-rule="nonzero"
+                ></path>
+              </g>
+            </svg>
+          </button>
+        </div>
+      </article>
+
+      <article class="intro">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0443/2573/2519/t/4/assets/pattern-left.svg"
+          alt="Left Pattern Image"
+        />
+        <img
+          src="https://cdn.shopify.com/s/files/1/0443/2573/2519/t/4/assets/pattern-right.svg"
+          alt="Right Pattern Image"
+        />
+
+        <div class="intro__text">
+          <h2 class="intro__text__title">HUMAN GRADE DOG FOOD</h2>
+          <p class="intro__text__text">
+            Fresh recipes including meat, vegetables, herbs and botanicals. Your
+            dog will smell the difference! 🦴🐶
+          </p>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="feature__bg"></div>
+
+        <div class="feature__text">
+          <h2 class="feature__text__title">Grain Free Dog Food</h2>
+          <p class="feature__text__text">
+            Slow cooked, Grain, Gluten and Soya Free. Less Itching, Happy
+            Tummys, Happy Dogs.
+          </p>
+
+          <ul class="feature__text__list init">
+            <li class="feature__text__list__item">
+              <span>🌱</span>
+              Fresher
+            </li>
+            <li class="feature__text__list__item">
+              <span>🌱</span>
+              More Digestible.
+            </li>
+            <li class="feature__text__list__item">
+              <span>🌱</span>
+              More Nutritious.
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="step">
+        <h2 class="step__title init">The perfect plan for your dog</h2>
+
+        <div class="step__container init">
+          <div class="step__container__content">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0443/2573/2519/files/step-1_140x140.png?v=1598010764"
+              alt="Step1 Image"
+            />
+            <h1 class="step__container__content__num">STEP 1</h1>
+            <h2 class="step__container__content__title">
+              Tell us your dogs details
+            </h2>
+            <p class="step__container__content__text">
+              Boop® will use your dogs unique makeup to fetch the perfect food
+              for your dog.
+            </p>
+          </div>
+
+          <div class="step__container__content">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0443/2573/2519/files/paw_140x140.png?v=1598011976"
+              alt="Step2 Image"
+            />
+            <h1 class="step__container__content__num">STEP 2</h1>
+            <h2 class="step__container__content__title">
+              Explore your suggestions
+            </h2>
+            <p class="step__container__content__text">
+              Based on your dogs details, we’ll offer your pup the right recipe
+              for a happier, healthier dog. It’s pawesome!
+            </p>
+          </div>
+
+          <div class="step__container__content">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0443/2573/2519/files/truck_140x140.png?v=1598011996"
+              alt="Step3 Image"
+            />
+            <h1 class="step__container__content__num">STEP 3</h1>
+            <h2 class="step__container__content__title">
+              Delivered to your door
+            </h2>
+            <p class="step__container__content__text">
+              Our team ships your tailored food straight to your door using one
+              of our selected shipping partners.
+            </p>
+          </div>
+        </div>
+
+        <a class="step__btn" href="#">LETS GO!</a>
+      </article>
+
+      <article class="shop init">
+        <div class="shop__left">
+          <div class="shop__container">
+            <h2 class="shop__title">Find the right food</h2>
+            <p class="shop__text">
+              3 quick questions & we’ll find the right food for your dog, we’ll
+              even print their name on the bag!
+            </p>
+            <a class="shop__btn" href="#">GET STARTED</a>
+          </div>
+
+          <img
+            src="https://cdn.shopify.com/s/files/1/0443/2573/2519/files/pugpug2x_1.png?v=1603810943"
+            alt="Puppy Picture"
+          />
+        </div>
+
+        <div class="shop__right">
+          <div class="shop__right__top">
+            <div class="shop__container">
+              <h2 class="shop__title">Our food</h2>
+              <p class="shop__text">
+                Our high protein dog food in a range of delicious flavours!
+              </p>
+              <a class="shop__btn" href="#">SHOP NOW</a>
+            </div>
+
+            <img
+              src="https://cdn.shopify.com/s/files/1/0443/2573/2519/files/bowl.png?v=1598273388"
+              alt="Dog Food Picture"
+            />
+          </div>
+
+          <div class="shop__right__bottom">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0443/2573/2519/files/food.png?v=1598272335"
+              alt="Dog Snack Picture"
+            />
+
+            <div class="shop__container">
+              <h2 class="shop__title">Our treats</h2>
+              <p class="shop__text">
+                Our new range of natural treats are perfect for all dogs
+              </p>
+              <a class="shop__btn" href="#">SHOP NOW</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product init">
+        <div class="product__picture">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0443/2573/2519/products/Treat--Collection-Adult.jpg?v=1604337552"
+            alt="Product Picture"
+          />
+          <p class="product__picture__tag">SALE</p>
+        </div>
+
+        <div class="product__text">
+          <h2 class="product__text__title">Treat Collection</h2>
+          <p class="product__text__price"><span>£30.00</span>£20.00</p>
+          <a class="product__text__btn" href="#">VIEW</a>
+        </div>
+      </article>
+
+      <article class="review">
+        <div class="review__container">
+          <img
+            src="http://images.loox.io/uploads/2020/11/17/VJeV6chKY.jpg"
+            alt="Review Picture"
+          />
+
+          <div class="review__container__content">
+            <p class="review__container__content__avatar">K4</p>
+            <p class="review__container__content__name">Katherine 4.</p>
+            <p class="review__container__content__data">2020. 11. 17.</p>
+            <p class="review__container__content__text">
+              Rollo and Jerry are clearly very excited for their Boop treats!
+              Thank you!!
+            </p>
+            <div class="review__container__content__star"></div>
+          </div>
+
+          <input
+            type="hidden"
+            name="TREAT COLLECTION (ADULT)"
+            value="https://cdn.shopify.com/s/files/1/0443/2573/2519/products/Treat--Collection-Adult_x100.jpg?v=1604337552"
+          />
+        </div>
+
+        <div class="review__container">
+          <img
+            src="http://images.loox.io/uploads/2020/10/27/4kaktQ-_t.jpg"
+            alt="Review Picture"
+          />
+
+          <div class="review__container__content">
+            <p class="review__container__content__avatar">NW</p>
+            <p class="review__container__content__name">Natalie W.</p>
+            <p class="review__container__content__data">2020. 10. 28.</p>
+            <p class="review__container__content__text">
+              My first order!! My sausage dogs absolutely love these 😊 Super
+              Healthy too
+            </p>
+            <div class="review__container__content__star"></div>
+          </div>
+
+          <input
+            type="hidden"
+            name="TREAT COLLECTION (ADULT)"
+            value="https://cdn.shopify.com/s/files/1/0443/2573/2519/products/Treat--Collection-Adult_x100.jpg?v=1604337552"
+          />
+        </div>
+
+        <div class="review__container">
+          <img
+            src="http://images.loox.io/uploads/2020/10/27/4yBe1Qb_K.jpg"
+            alt="Review Picture"
+          />
+
+          <div class="review__container__content">
+            <p class="review__container__content__avatar">GB</p>
+            <p class="review__container__content__name">Georgina B.</p>
+            <p class="review__container__content__data">2020. 10. 27.</p>
+            <p class="review__container__content__text">
+              My little Nala loves her Boop food! Definitely going to try
+              different flavours next time we order! Yum!
+            </p>
+            <div class="review__container__content__star"></div>
+          </div>
+
+          <input
+            type="hidden"
+            name="CHICKEN WITH TURKEY, SALMON, SWEET POTATO & CARROT (PUPPY)"
+            value="https://cdn.shopify.com/s/files/1/0443/2573/2519/products/Puppy_-Chicken-With-Turkey_-Salmon_-Sweet-Potato-_-Asparagus_x100.jpg?v=1601993856"
+          />
+        </div>
+
+        <div class="review__more">
+          <div class="review__more__content">
+            <i class="fas fa-star"></i>
+            <p class="review__more__content__text">
+              Show more<br />
+              reviews
+            </p>
+          </div>
+        </div>
+
+        <div class="review__modal-1">
+          <div class="review__modal-1__container">
+            <button class="review__modal-1__container__btn">✕</button>
+
+            <img
+              src="http://images.loox.io/uploads/2020/11/17/VJeV6chKY_mid.jpg"
+              alt="Review Picture"
+            />
+
+            <div class="review__modal-1__right">
+              <div class="review__modal-1__right__top">
+                <p class="review__modal-1__right__top__name">Katherine 4.</p>
+                <p class="review__modal-1__right__top__data">2020. 11. 17.</p>
+                <div class="review__modal-1__right__top__star"></div>
+                <p class="review__modal-1__right__top__text">
+                  Rollo and Jerry are clearly very excited for their Boop
+                  treats! Thank you!!
+                </p>
+
+                <div class="review__modal-1__right__top__social">
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+              </div>
+
+              <div class="review__modal-1__right__bottom">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0443/2573/2519/products/Treat--Collection-Adult_x100.jpg?v=1604337552"
+                  alt="Product Picture"
+                />
+
+                <div class="review__modal-1__right__bottom__text">
+                  <h2 class="review__modal-1__right__bottom__text__title">
+                    TREAT COLLECTION (ADULT)
+                  </h2>
+                  <a class="review__modal-1__right__bottom__text__btn" href="#">
+                    View product
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review__modal-2">
+          <div class="review__modal-2__wrap">
+            <button class="review__modal-2__wrap__btn">✕</button>
+
+            <p class="review__modal-2__wrap__summary">9 Reviews</p>
+
+            <div class="review__modal-2__wrap__container">
+              <div class="review__modal-2__wrap__container__content">
+                <img
+                  src="http://images.loox.io/uploads/2020/11/17/VJlm3V2nKK.jpg"
+                  alt="Review Picture"
+                />
+
+                <div class="review__modal-2__wrap__container__content__text">
+                  <p
+                    class="review__modal-2__wrap__container__content__text__name"
+                  >
+                    Emma S.
+                  </p>
+                  <p
+                    class="review__modal-2__wrap__container__content__text__data"
+                  >
+                    2020. 11. 17.
+                  </p>
+                  <div
+                    class="review__modal-2__wrap__container__content__text__star"
+                  ></div>
+                  <p
+                    class="review__modal-2__wrap__container__content__text__text"
+                  >
+                    These are super scrumptious 😋
+                  </p>
+                </div>
+
+                <div class="review__modal-2__wrap__container__content__product">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0443/2573/2519/products/Fish-Bites_x50.jpg?v=1604337566"
+                    alt="Product Picture"
+                  />
+                  <p
+                    class="review__modal-2__wrap__container__content__product__title"
+                  >
+                    Fish Bites
+                  </p>
+                </div>
+              </div>
+
+              <div class="review__modal-2__wrap__container__content">
+                <img
+                  src="http://images.loox.io/uploads/2020/11/17/418B4n2YY.jpg"
+                  alt="Review Picture"
+                />
+
+                <div class="review__modal-2__wrap__container__content__text">
+                  <p
+                    class="review__modal-2__wrap__container__content__text__name"
+                  >
+                    Harriet B.
+                  </p>
+                  <p
+                    class="review__modal-2__wrap__container__content__text__data"
+                  >
+                    2020. 11. 17.
+                  </p>
+                  <div
+                    class="review__modal-2__wrap__container__content__text__star"
+                  ></div>
+                  <p
+                    class="review__modal-2__wrap__container__content__text__text"
+                  >
+                    @sausagesquad absolutely love these natural treats!! The
+                    treat collection has loads in too so more than enough for my
+                    5.
+                  </p>
+                </div>
+
+                <div class="review__modal-2__wrap__container__content__product">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0443/2573/2519/products/Chick-Feet_x50.jpg?v=1605368689"
+                    alt="Product Picture"
+                  />
+                  <p
+                    class="review__modal-2__wrap__container__content__product__title"
+                  >
+                    Chick Feet
+                  </p>
+                </div>
+              </div>
+
+              <div class="review__modal-2__wrap__container__content">
+                <img
+                  src="http://images.loox.io/uploads/2020/11/17/NJ5J43hKK.jpg"
+                  alt="Review Picture"
+                />
+
+                <div class="review__modal-2__wrap__container__content__text">
+                  <p
+                    class="review__modal-2__wrap__container__content__text__name"
+                  >
+                    Mary H.
+                  </p>
+                  <p
+                    class="review__modal-2__wrap__container__content__text__data"
+                  >
+                    2020. 11. 17.
+                  </p>
+                  <div
+                    class="review__modal-2__wrap__container__content__text__star"
+                  ></div>
+                  <p
+                    class="review__modal-2__wrap__container__content__text__text"
+                  >
+                    Alan is quite fussy so I was really happy I found something
+                    good for him as well as tasty.
+                  </p>
+                </div>
+
+                <div class="review__modal-2__wrap__container__content__product">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0443/2573/2519/products/Beef-Gullet_x50.jpg?v=1604337564"
+                    alt="Product Picture"
+                  />
+                  <p
+                    class="review__modal-2__wrap__container__content__product__title"
+                  >
+                    Beef Gullet
+                  </p>
+                </div>
+              </div>
+
+              <div class="review__modal-2__wrap__container__content">
+                <img
+                  src="http://images.loox.io/uploads/2020/11/17/4y1E7hhFt.jpg"
+                  alt="Review Picture"
+                />
+
+                <div class="review__modal-2__wrap__container__content__text">
+                  <p
+                    class="review__modal-2__wrap__container__content__text__name"
+                  >
+                    Harriet B.
+                  </p>
+                  <p
+                    class="review__modal-2__wrap__container__content__text__data"
+                  >
+                    2020. 11. 17.
+                  </p>
+                  <div
+                    class="review__modal-2__wrap__container__content__text__star"
+                  ></div>
+                  <p
+                    class="review__modal-2__wrap__container__content__text__text"
+                  >
+                    So many natural treats in a resealable bag. Mummy wasn’t
+                    keen on the smelll though!
+                  </p>
+                </div>
+
+                <div class="review__modal-2__wrap__container__content__product">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0443/2573/2519/products/Treat--Collection-Adult_x50.jpg?v=1604337552"
+                    alt="Product Picture"
+                  />
+                  <p
+                    class="review__modal-2__wrap__container__content__product__title"
+                  >
+                    Treat Collection (Adult)
+                  </p>
+                </div>
+              </div>
+
+              <div class="review__modal-2__wrap__container__content">
+                <img
+                  src="http://images.loox.io/uploads/2020/11/17/Vyvnf32Kt.jpg"
+                  alt="Review Picture"
+                />
+
+                <div class="review__modal-2__wrap__container__content__text">
+                  <p
+                    class="review__modal-2__wrap__container__content__text__name"
+                  >
+                    Emily G.
+                  </p>
+                  <p
+                    class="review__modal-2__wrap__container__content__text__data"
+                  >
+                    2020. 11. 17.
+                  </p>
+                  <div
+                    class="review__modal-2__wrap__container__content__text__star"
+                  ></div>
+                  <p
+                    class="review__modal-2__wrap__container__content__text__text"
+                  >
+                    The longest last treat I’ve ever bought! Took days to be
+                    destroyed. 😊 very happy !
+                  </p>
+                </div>
+
+                <div class="review__modal-2__wrap__container__content__product">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0443/2573/2519/products/Trachea_x50.jpg?v=1604337568"
+                    alt="Product Picture"
+                  />
+                  <p
+                    class="review__modal-2__wrap__container__content__product__title"
+                  >
+                    Trachea
+                  </p>
+                </div>
+              </div>
+
+              <div class="review__modal-2__wrap__container__content">
+                <img
+                  src="http://images.loox.io/uploads/2020/11/17/VJeV6chKY.jpg"
+                  alt="Review Picture"
+                />
+
+                <div class="review__modal-2__wrap__container__content__text">
+                  <p
+                    class="review__modal-2__wrap__container__content__text__name"
+                  >
+                    Katherine 4.
+                  </p>
+                  <p
+                    class="review__modal-2__wrap__container__content__text__data"
+                  >
+                    2020. 11. 17.
+                  </p>
+                  <div
+                    class="review__modal-2__wrap__container__content__text__star"
+                  ></div>
+                  <p
+                    class="review__modal-2__wrap__container__content__text__text"
+                  >
+                    Rollo and Jerry are clearly very excited for their Boop
+                    treats! Thank you!!
+                  </p>
+                </div>
+
+                <div class="review__modal-2__wrap__container__content__product">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0443/2573/2519/products/Treat--Collection-Adult_x50.jpg?v=1604337552"
+                    alt="Product Picture"
+                  />
+                  <p
+                    class="review__modal-2__wrap__container__content__product__title"
+                  >
+                    Treat Collection (Adult)
+                  </p>
+                </div>
+              </div>
+
+              <div class="review__modal-2__wrap__container__content">
+                <img
+                  src="http://images.loox.io/uploads/2020/11/9/Ek1amdfKY.jpg"
+                  alt="Review Picture"
+                />
+
+                <div class="review__modal-2__wrap__container__content__text">
+                  <p
+                    class="review__modal-2__wrap__container__content__text__name"
+                  >
+                    Michelle A.
+                  </p>
+                  <p
+                    class="review__modal-2__wrap__container__content__text__data"
+                  >
+                    2020. 11. 10.
+                  </p>
+                  <div
+                    class="review__modal-2__wrap__container__content__text__star"
+                  ></div>
+                  <p
+                    class="review__modal-2__wrap__container__content__text__text"
+                  >
+                    Wow Bonnie loves these chicken legs. Will always be a must
+                    in the house hold. Keeps her entertained for hours and she
+                    get super excited when I get one out for her. Would super
+                    recommend.
+                  </p>
+                </div>
+
+                <div class="review__modal-2__wrap__container__content__product">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0443/2573/2519/products/Chick-Feet_x50.jpg?v=1604337564"
+                    alt="Product Picture"
+                  />
+                  <p
+                    class="review__modal-2__wrap__container__content__product__title"
+                  >
+                    Chick Feet
+                  </p>
+                </div>
+              </div>
+
+              <div class="review__modal-2__wrap__container__content">
+                <img
+                  src="http://images.loox.io/uploads/2020/10/27/4kaktQ-_t.jpg"
+                  alt="Review Picture"
+                />
+
+                <div class="review__modal-2__wrap__container__content__text">
+                  <p
+                    class="review__modal-2__wrap__container__content__text__name"
+                  >
+                    Natalie W.
+                  </p>
+                  <p
+                    class="review__modal-2__wrap__container__content__text__data"
+                  >
+                    2020. 10. 28.
+                  </p>
+                  <div
+                    class="review__modal-2__wrap__container__content__text__star"
+                  ></div>
+                  <p
+                    class="review__modal-2__wrap__container__content__text__text"
+                  >
+                    My first order!! My sausage dogs absolutely love these 😊
+                    Super Healthy too
+                  </p>
+                </div>
+
+                <div class="review__modal-2__wrap__container__content__product">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0443/2573/2519/products/Treat--Collection-Adult_x50.jpg?v=1603791504"
+                    alt="Product Picture"
+                  />
+                  <p
+                    class="review__modal-2__wrap__container__content__product__title"
+                  >
+                    Treat Collection (Adult)
+                  </p>
+                </div>
+              </div>
+
+              <div class="review__modal-2__wrap__container__content">
+                <img
+                  src="http://images.loox.io/uploads/2020/10/27/4yBe1Qb_K.jpg"
+                  alt="Review Picture"
+                />
+
+                <div class="review__modal-2__wrap__container__content__text">
+                  <p
+                    class="review__modal-2__wrap__container__content__text__name"
+                  >
+                    Georgina B.
+                  </p>
+                  <p
+                    class="review__modal-2__wrap__container__content__text__data"
+                  >
+                    2020. 10. 27.
+                  </p>
+                  <div
+                    class="review__modal-2__wrap__container__content__text__star"
+                  ></div>
+                  <p
+                    class="review__modal-2__wrap__container__content__text__text"
+                  >
+                    My little Nala loves her Boop food! Definitely going to try
+                    different flavours next time we order! Yum!
+                  </p>
+                </div>
+
+                <div class="review__modal-2__wrap__container__content__product">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0443/2573/2519/products/Puppy_-Chicken-With-Turkey_-Salmon_-Sweet-Potato-_-Asparagus_x50.jpg?v=1601993856"
+                    alt="Product Picture"
+                  />
+                  <p
+                    class="review__modal-2__wrap__container__content__product__title"
+                  >
+                    Chicken with Turkey, Salmon, Sweet Potato & Carrot (Puppy)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="faq">
+        <h2 class="faq__title">FAQ</h2>
+
+        <div class="faq__container">
+          <div class="faq__container__content">
+            <h2 class="faq__container__content__title">
+              How is the food made?
+            </h2>
+            <button class="faq__container__content__btn">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+
+          <p class="faq__container__text">
+            We use the latest technology to create a food that doesn’t lose
+            nutrients as its been cooked. Our ingredients are traceable to the
+            farms and fisheries that they came from. All ingredients are
+            transported in cooled vans and then slow cooked at 82 degrees to
+            protect the protein so no goodness is lost.
+          </p>
+        </div>
+
+        <div class="faq__container">
+          <div class="faq__container__content">
+            <h2 class="faq__container__content__title">
+              What age can puppies go onto adult food?
+            </h2>
+            <button class="faq__container__content__btn">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+
+          <p class="faq__container__text">
+            Its recommended to feed puppy food to dogs up to 15 months. After 15
+            months they can enjoy our wide range of flavours.
+          </p>
+        </div>
+
+        <div class="faq__container">
+          <div class="faq__container__content">
+            <h2 class="faq__container__content__title">
+              How much should I feed my dog?
+            </h2>
+            <button class="faq__container__content__btn">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+
+          <p class="faq__container__text">
+            We have included a feeding guide on the back of each bag. You can
+            also find this on each individual product page. Please check each
+            flavour as it does vary slightly.
+          </p>
+        </div>
+
+        <div class="faq__container">
+          <div class="faq__container__content">
+            <h2 class="faq__container__content__title">
+              What does grain free even mean?
+            </h2>
+            <button class="faq__container__content__btn">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+
+          <p class="faq__container__text">
+            Grain Free Food Is food that isn't bulked out with cheap fillers
+            such as corn, maize, rice and cereals. These ingredients often cause
+            issues in dogs such as Itching, Runny Poos, Upset Tummys and
+            behavioural issues. Our food is has a whole food base such as sweet
+            potato eliminating these problems. If your dog has an allergy to
+            potato then please see our Super Food range.
+          </p>
+        </div>
+
+        <a class="faq__btn" href="#">VIEW ALL</a>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__list">
+        <li class="footer__list__item">
+          <a href="#">Our Food</a>
+        </li>
+        <li class="footer__list__item">
+          <a href="#">Our Treats</a>
+        </li>
+        <li class="footer__list__item">
+          <a href="#">Our Story</a>
+        </li>
+      </ul>
+
+      <ul class="footer__list">
+        <li class="footer__list__item">
+          <a href="#">FAQ</a>
+        </li>
+        <li class="footer__list__item">
+          <a href="#">Contact Us</a>
+        </li>
+        <li class="footer__list__item">
+          <a href="#">Login In / Register</a>
+        </li>
+      </ul>
+
+      <ul class="footer__list">
+        <li class="footer__list__item">
+          <a href="#">Delivery</a>
+        </li>
+        <li class="footer__list__item">
+          <a href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__list__item">
+          <a href="#">Cookies</a>
+        </li>
+      </ul>
+
+      <ul class="footer__social">
+        <li class="footer__social__item">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li class="footer__social__item">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li class="footer__social__item">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
